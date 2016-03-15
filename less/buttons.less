@@ -10,13 +10,14 @@
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
+  color: @my-base-color;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
   cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 2px solid @my-base-color;
   white-space: nowrap;
+  text-transform: uppercase;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
   .user-select(none);
 
@@ -32,8 +33,10 @@
   &:hover,
   &:focus,
   &.focus {
-    color: @btn-default-color;
+    color: white;
     text-decoration: none;
+    background-color: @my-base-color;
+    outline: none;
   }
 
   &:active,
@@ -64,10 +67,23 @@
 // --------------------------------------------------
 
 .btn-default {
-  .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  border-color: white;
+  color: white;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    background-color: white;
+    color: @my-primary-color;
+  }
 }
 .btn-primary {
-  .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  border-color: @my-primary-color;
+  color: @my-primary-color;
+  &:hover, &:focus, &.focus {
+    background-color: @my-primary-color;
+    color: white;
+  }
 }
 // Success appears as green
 .btn-success {
