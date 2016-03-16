@@ -2637,8 +2637,11 @@ header {
   box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
   border: none;
 }
+.Storage {
+  background-image: url(../images/Storage.png);
+}
 h2 {
-  margin: 20px 0;
+  margin: 60px 0;
 }
 h2 strong {
   color: #0086e4;
@@ -2654,4 +2657,6 @@ h4 {
   color: #424242;
   padding: 10px;
   font-weight: 600;
+  margin-bottom: 20px;
+  height: 50px;
 }
