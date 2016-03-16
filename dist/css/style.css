@@ -297,7 +297,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #333;
 }
 h1 small,
 h2 small,
@@ -1762,6 +1762,14 @@ select[multiple].input-lg {
   background-color: #fa8b36;
   outline: none;
 }
+.btn.title {
+  cursor: default;
+  font-size: 25px;
+  min-width: 500px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 8px 8px 24px 0px rgba(0, 0, 0, 0.11);
+}
 .btn:active,
 .btn.active {
   outline: 0;
@@ -2563,7 +2571,6 @@ input[type="button"].btn-block {
 }
 body {
   font-family: 'museo_sans';
-  font-size: 16px;
 }
 header {
   position: relative;
@@ -2592,6 +2599,7 @@ header {
   border-top: 2px solid white;
 }
 .promo h1 {
+  color: white;
   font-size: 40px;
   text-shadow: 1px 1px 1px #ECE8E8, 1px 1px 10px #0C0C0C;
   text-transform: uppercase;
@@ -2653,10 +2661,86 @@ h3 {
 h3.primary {
   color: #0086e4;
 }
+.lg-font {
+  font-size: 24px;
+}
 h4 {
-  color: #424242;
-  padding: 10px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  height: 50px;
+  font-size: 30px;
+}
+.primary {
+  color: #0086e4;
+}
+hr + h4 {
+  margin-top: 65px;
+  margin-bottom: 40px;
+}
+form.default input,
+form.default textarea {
+  background: #0086e4;
+  display: block;
+  width: 100%;
+  border: 0;
+  color: white;
+  font-size: 24px;
+  outline: none;
+  padding: 0 30px;
+  line-height: 3.3;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+form.default input[placeholder],
+form.default textarea[placeholder] {
+  color: white;
+  text-overflow: ellipsis;
+}
+form.default input::-webkit-input-placeholder,
+form.default textarea::-webkit-input-placeholder {
+  color: white;
+  text-overflow: ellipsis;
+}
+form.default input::-moz-placeholder,
+form.default textarea::-moz-placeholder {
+  color: white;
+  text-overflow: ellipsis;
+}
+form.default input:-moz-placeholder,
+form.default textarea:-moz-placeholder {
+  color: white;
+  text-overflow: ellipsis;
+}
+form.default input:-ms-input-placeholder,
+form.default textarea:-ms-input-placeholder {
+  color: white;
+  text-overflow: ellipsis;
+}
+form.default input:first-child,
+form.default textarea:first-child {
+  background: #0086e4;
+}
+form.default input:nth-child(2),
+form.default textarea:nth-child(2) {
+  background: #1d8eed;
+}
+form.default input:nth-child(3),
+form.default textarea:nth-child(3) {
+  background: #2f96f6;
+}
+form.default input[type="submit"],
+form.default textarea[type="submit"] {
+  background: #fa8b36;
+  text-transform: uppercase;
+}
+form.default input[type="submit"]:hover,
+form.default textarea[type="submit"]:hover {
+  background: #e17d30;
+}
+form.default textarea {
+  height: 160px;
+  -moz-resize: none;
+  -ms-resize: none;
+  -o-resize: none;
+  resize: none;
+}
+hr {
+  margin: 60px 0;
 }
