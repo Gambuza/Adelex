@@ -88,23 +88,140 @@ a{
 		div{
 			border: 1px solid #ddd;
     text-align: center;
-    padding: 15px;
-    height: 350px;
+    padding: 20px;
+    height: 410px;
 			&:hover{
 				box-shadow: 0px 0px 10px rgba(0.5,0.5,0.5,0.5);
 				border: none;
 			}
+			span{
+				    font-size: 21px;
+    font-weight: 600;
+    height: 70px;
+    display: inline-block;
+			}
 			.btn{
+				margin-top: 30px;
 			}
 		}
 
 	}
 }
+.advantages{
+}
 .Storage{
-	background-image: url(../images/Storage.png);
+background-image: url(../images/Storage.png);
+    background-size: cover;
+    height: 328px;
+    background-repeat: no-repeat;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+.Rectangle{
+    background-image: url(../images/Rectangle.png);
+    background-size: cover;
+    height: 328px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+.Wallet{
+	    background-image: url(../images/Wallet.png);
+    background-size: cover;
+    height: 328px;
+    background-repeat: no-repeat;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+.Tuck{
+background-image: url(../images/Tuck.png);
+    background-size: cover;
+    height: 328px;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+.one{
+background-image: url(../images/triangle1.png);
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+    	background-image: url(../images/triangle.png);
+    background-position: -13px 0;
+    color: white;
+    text-decoration: none;
+
+    }
+}
+.two{
+    background-image: url(../images/triangle2.png);
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+     &:hover{
+    background-image: url(../images/triangle.png);
+    background-position: -72px 0px;
+    color: white;
+    text-decoration: none;
+
+    }
+}
+.three{
+    background-image: url(../images/triangle3.png);
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+    	background-image: url(../images/triangle.png);
+    background-position: -14px -63px;
+    color: white;
+    text-decoration: none;
+
+    }
+}
+.four{
+	background-image: url(../images/triangle4.png);
+    height: 60px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+ background-image: url(../images/triangle.png);
+    background-position: -72px -63px;
+    color: white;
+    text-decoration: none;
+
+    }
 }
 h2{
-	margin: 60px 0;
 	strong{
 		color: @my-primary-color;
 		border-bottom: 1px solid @my-primary-color;
@@ -116,3 +233,96 @@ h3{
     color: @my-primary-color;
   }
 }
+.lg-font {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.primary {
+  color: @my-primary-color;
+}
+
+hr + h4 {
+
+}
+
+
+form {
+  &.default {
+    input,
+    textarea {
+      background: #0086e4;
+      display: block;
+      width: 100%;
+      border: 0;
+      color: white;
+      font-size: 24px;
+      outline: none;
+      padding: 0 30px;
+      line-height: 3.3;
+
+      &[placeholder] {
+        color: white;
+        text-overflow: ellipsis;
+      }
+
+      &::-webkit-input-placeholder {
+        color: white;
+        text-overflow: ellipsis;
+      }
+
+      &::-moz-placeholder {
+        color: white;
+        text-overflow: ellipsis;
+      }
+
+      /* Firefox 19+ */
+      &:-moz-placeholder {
+        color: white;
+        text-overflow: ellipsis;
+      }
+
+      /* Firefox 18- */
+      &:-ms-input-placeholder {
+        color: white;
+        text-overflow: ellipsis;
+      }
+
+      &:first-child {
+        background: #0086e4;
+      }
+
+      &:nth-child(2) {
+        background: #1d8eed;
+      }
+
+      &:nth-child(3) {
+        background: #2f96f6;
+      }
+
+      &[type="submit"] {
+        background:@my-base-color;
+        text-transform: uppercase;
+        &:hover {
+          background: #e17d30;
+        }
+      }
+
+    }
+
+    textarea {
+      height: 160px;
+      -moz-resize: none;
+      -ms-resize: none;
+      -o-resize: none;
+      resize: none;
+    }
+
+  }
+
+}
+
+hr {margin: 60px 0;}
