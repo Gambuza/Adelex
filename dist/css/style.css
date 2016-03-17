@@ -2625,10 +2625,7 @@ header {
   margin: auto;
   width: 80px;
   height: 80px;
-  background-color: #fa8b36;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
+  background-image: url(../iamges/figura.png);
 }
 .scroll a {
   width: 100%;
@@ -2638,15 +2635,22 @@ header {
 #products div div {
   border: 1px solid #ddd;
   text-align: center;
-  padding: 15px;
-  height: 350px;
+  padding: 20px;
+  height: 420px;
+  margin-top: 20px;
 }
 #products div div:hover {
   box-shadow: 0px 0px 10px rgba(1, 1, 1, 0.5);
   border: none;
 }
-.Storage {
-  background-image: url(../images/Storage.png);
+#products div div span {
+  font-size: 21px;
+  font-weight: 600;
+  height: 60px;
+  display: inline-block;
+}
+#products div div .btn {
+  margin-top: 10px;
 }
 .Storage {
   background-image: url(../images/Storage.png);
@@ -2756,9 +2760,6 @@ header {
   color: white;
   text-decoration: none;
 }
-h2 {
-  margin: 60px 0;
-}
 h2 strong {
   color: #0086e4;
   border-bottom: 1px solid #0086e4;
@@ -2777,10 +2778,6 @@ h4 {
 }
 .primary {
   color: #0086e4;
-}
-hr + h4 {
-  margin-top: 65px;
-  margin-bottom: 40px;
 }
 form.default input,
 form.default textarea {
@@ -2851,4 +2848,11 @@ form.default textarea {
 }
 hr {
   margin: 60px 0;
+}
+footer {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+footer a {
+  font-weight: 600;
 }
