@@ -2610,10 +2610,10 @@ header {
 }
 .promo .btn {
   font-weight: 600;
+  background-color: #0086e4;
 }
 .promo .btn:hover {
   transition: 0.3s;
-  background-color: #0086e4;
   color: white;
   border: 2px solid #0086e4;
 }
@@ -2783,6 +2783,7 @@ h3.primary {
 }
 h4 {
   font-size: 30px;
+  margin-bottom: 60px;
 }
 .primary {
   color: #0086e4;
