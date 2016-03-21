@@ -2794,11 +2794,15 @@ h3.primary {
   font-size: 24px;
 }
 h4 {
+  margin: 60px 0;
   font-size: 30px;
   font-weight: 600;
 }
 .primary {
   color: #0086e4;
+}
+.box {
+  display: none;
 }
 form.default input,
 form.default textarea {
@@ -2910,10 +2914,13 @@ footer a {
   }
 }
 .slider {
-  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.1);
   width: 1050px;
   margin: 0 auto;
   margin-bottom: 60px;
+}
+.slider h4 {
+  padding: 50px;
 }
 .owl-prev {
   background-image: url(../images/arrow_left.png);
@@ -2924,7 +2931,7 @@ footer a {
   left: -40px;
   text-align: center;
   padding-top: 20px;
-  color: #0086E4;
+  text-indent: 9999px;
 }
 .owl-next {
   background-image: url(../images/arrow_right.png);
@@ -2935,7 +2942,7 @@ footer a {
   right: -40px;
   text-align: center;
   padding-top: 20px;
-  color: #0086E4;
+  text-indent: 9999px;
 }
 .owl-dots {
   display: flex;

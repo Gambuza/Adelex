@@ -27,3 +27,22 @@ jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destinatio
 return false;
 });
 });
+
+
+window.onload= function() {
+    document.getElementById('toggler').onclick = function() {
+        openbox('box', this);
+        return false;
+    };
+};
+function openbox(id, toggler) {
+    var div = document.getElementById(id);
+    if(div.style.display == 'block') {
+        div.style.display = 'none';
+        toggler.innerHTML = 'Подробнее';
+    }
+    else {
+        div.style.display = 'block';
+        toggler.innerHTML = 'Скрыть';
+    }
+}
