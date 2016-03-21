@@ -2664,6 +2664,9 @@ header {
 #products div div .btn {
   margin-top: 10px;
 }
+.btn {
+  font-weight: 600;
+}
 .Storage {
   background-image: url(../images/Storage.png);
   background-size: cover;
@@ -2804,6 +2807,9 @@ h4 {
 .box {
   display: none;
 }
+form {
+  font-weight: 600;
+}
 form.default input,
 form.default textarea {
   background: #0086e4;
@@ -2874,8 +2880,6 @@ form.default textarea {
 footer {
   font-size: 20px;
   margin-bottom: 40px;
-}
-footer a {
   font-weight: 600;
 }
 /* 
