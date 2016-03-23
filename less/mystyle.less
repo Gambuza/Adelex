@@ -71,7 +71,7 @@ header {
     font-weight: 600;
     background-color: #0086e4;
     color: white;
-    border: none;
+    border: 2px solid #0086E4;
 
     &:hover {
       transition: 0.3s;
@@ -190,6 +190,7 @@ h3 {
 h4 {
   font-size: 30px;
   font-weight: 600;
+
 }
 
 .primary {
@@ -199,7 +200,9 @@ h4 {
 .box {
   display: none;
 }
-
+.title-form{
+margin-bottom: 60px;
+}
 form {
   font-weight: 600;
 
@@ -377,7 +380,7 @@ box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.1);
     background: @my-base-color;
     margin-right: 20px;
 
-    &:last-child {
+    &:last-child{
       margin-right: 0;
     }
 
@@ -407,7 +410,117 @@ box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.1);
   }
 
 }
+// МОДАЛЬНОЕ ОКНО
+#modal_form {
+	width: 970px; 
+	background: #fff;
+	position: fixed;
+	top: 45%; 
+	left: 50%; 
+	margin-top: -400px;
+	margin-left: -470px; 
+	display: none; 
+	opacity: 0; 
+	z-index: 5; 
+	padding: 50px 10px 10px 50px;
+	p{
+		font-size: 20px;
+		line-height: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		strong{
 
+			b{
+				color:@my-primary-color;
+			}
+		}
+	}
+	.owl-carousel{
+		width: 350px;
+		.owl-stage-outer{
+			height: 100%;
+		}
+		.item{
+			width: 100%;
+			height: 350px;
+		}
+		.owl-controls{
+			.owl-nav{
+				display: none;
+			}
+			.owl-dots{
+				margin: 10px 0;
+				.owl-dot{
+					margin-right: 10px;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.text-modal{
+	h4{
+		margin:0;
+	}
+	p{
+		margin-top: 30px;
+		font-size: 20px;
+	}
+}
+.table{
+	caption{
+		    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+    margin: 30px 0;
+	}
+	thead{
+		background-color: #0086E4;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #ddd;
+		th{
+			border-right: 1px solid white;
+		}
+	}
+	tbody{
+		border: 1px solid #ddd;
+		tr{
+		td{
+			border-right: 1px solid #ddd;
+		}
+	}
+	}
+}
+
+ // Кнoпкa
+
+#modal_form #modal_close {
+	width: 31px;
+	height: 31px;
+	position: absolute;
+	top: -40px;
+	right: -50px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
 /* 
  *  Owl Carousel - Auto Height Plugin
  */
@@ -417,6 +530,9 @@ box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.1);
   -ms-transition: height 500ms ease-in-out;
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out;
+}
+.owl-small{
+
 }
 
 /* 
