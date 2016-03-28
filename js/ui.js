@@ -32,11 +32,41 @@ $(document).ready(function() {
 
 	$(".btn-primary").click(function() {
 		$(this).parent().parent().find('.info').toggleClass("show");
+		$(this).parent().parent().find('.info').css('z-index', 1);
 
-    if ($(this).text() == "Подробнее")
-       $(this).text("Скрыть")
-    else
-       $(this).text("Подробнее");
+		$(this).parent().find('.visible-trigger').toggleClass("show");
+
+
+	  	// $( ".visible-trigger" ).show( "fast", function() {
+	   //  	// Animation complete.
+	  	// });
+
+	    if ($(this).text() == "Подробнее")
+	       $(this).text("Скрыть")
+	    else
+	       $(this).text("Подробнее");
+	});
+
+	// Модальное окно
+		$('a#go').click( function(event){ 
+		event.preventDefault(); 
+		$('#overlay').fadeIn(400, 
+		 	function(){
+				$('#modal_form') 
+					.css('display', 'block') 
+					.animate({opacity: 1, top: '50%'}, 200); 
+		});
+	});
+	// Закрыть
+	$('#modal_close, #overlay').click( function(){ 
+		$('#modal_form')
+			.animate({opacity: 0, top: '45%'}, 200,
+				function(){ 
+					$(this).css('display', 'none'); 
+					$('#overlay').fadeOut(400);
+				}
+			);
 	});
 
 });
+
