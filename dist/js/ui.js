@@ -8,10 +8,7 @@ $(document).ready(function(){
 		autoplayTimeout:5000,
 		responsive:{0:{items:1},600:{items:1},1e3:{items:1}}
 	})
-});
-// маркер на карте
-
-
+}); 
         // Плавность скролла
 	$("a.scrolls").click(function(){
 		var t=$(this).attr("href"),
