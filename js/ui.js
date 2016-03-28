@@ -54,10 +54,11 @@ $(document).ready(function() {
 		 	function(){
 				$('#modal_form') 
 					.css('display', 'block') 
-					.animate({opacity: 1, top: '50%'}, 200); 
+					.animate({opacity: 1, left: '0', top: '0', right: '0', bottom: '0'}, 200); 
+				$('body').css('overflow', 'hidden');
 		});
 	});
-	// Закрыть
+	// Закрытьß
 	$('#modal_close, #overlay').click( function(){ 
 		$('#modal_form')
 			.animate({opacity: 0, top: '45%'}, 200,
