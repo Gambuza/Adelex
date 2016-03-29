@@ -65,6 +65,7 @@ $(document).ready(function() {
 				function(){ 
 					$(this).css('display', 'none'); 
 					$('#overlay').fadeOut(400);
+					$('body').css('overflow', 'auto');
 				}
 			);
 	});
