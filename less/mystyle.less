@@ -417,6 +417,22 @@ footer {
       width: 80%;
       position: relative;
     }
+    .owl-carousel{
+    	width: 100%;
+    	.item{
+    		width: 100%;
+    	}
+    }
+    .owl-controls{
+    	.owl-nav{
+    		.owl-prev{
+    			display: none;
+    		}
+    		.owl-next{
+    			display: none;
+    		}
+    	}
+    }
     h4{
       font-weight: 600;
     }
@@ -428,30 +444,6 @@ footer {
         strong {
             b {
                 color: @my-primary-color;
-            }
-        }
-    }
-    .owl-carousel {
-        
-        .owl-stage-outer {
-            height: 100%;
-        }
-        .item {
-            width: 100%;
-            height: 350px;
-        }
-        .owl-controls {
-            .owl-nav {
-                display: none;
-            }
-            .owl-dots {
-                margin: 10px 0;
-                .owl-dot {
-                    margin-right: 10px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
             }
         }
     }
@@ -945,5 +937,9 @@ h4{
         font-size: 20px;
         text-overflow: ellipsis;
     }
+}
+#modal_form #modal_close{
+	top: -35px;
+	right: -35px;
 }
 }
