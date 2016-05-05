@@ -851,14 +851,25 @@ header{
     font-size: 20px;
 }
 #products{
+	div{
+		margin: 0!important;
+		&:hover{
+			bottom: 0!important;
+			border: 0!important;
+		}
+	}
 	span{
-		font-size: 16px!important;
+		padding: 10px;
+		display: block;
+	}
+	hr{
+		display: none;
 	}
 	img{
-		width: 80%;
+		width: 100%;
 	}
-	a{
-		font-size: 12px!important;
+	.btn{
+		width: 100%;
 	}
 }
 h1{
@@ -916,6 +927,9 @@ h1{
 h4{
 	font-size: 24px!important;
 }
+.slider{
+	padding: 0;
+}
 .text-modal {
   padding-left: 30px;
     h4 {
@@ -927,8 +941,18 @@ h4{
         text-overflow: ellipsis;
     }
 }
+.content{
+	margin: 0 auto;
+	width: 80%;
+}
 #modal_form #modal_close{
-	top: -35px;
-	right: -35px;
+    top: 10px;
+    right: 0;
+}
+.active{
+	margin-left: 10px;
+}
+.cloned{
+	margin-left: 10px;
 }
 }
